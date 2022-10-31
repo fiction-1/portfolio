@@ -1,13 +1,51 @@
+/*Syles*/
 body{
     background-color: #242424;
-    text-align: center;
+    text-align: left;
+    color: white;
 }
 
-p {
-    color: white;
-    margin: ;
+/*Header*/
+.header{
+    width: 100vw;
+    height: 10ex;
+    padding-left: 1vw;
 }
 
-h1{
-    color: white;
+
+/* Page Flex conatiner */
+.page-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+
+}
+
+/* Sidebar*/
+.sidebar{
+    flex-grow: 1;
+    flex-direction: column;
+    min-width: 35ex;
+    text-align: left;
+}
+
+/* Content Flex Conatiner */
+.flex-content{
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 5;
+    justify-content: top;
+    align-items:center;
+}
+
+/* Flex Objects */
+.flexible{
+    background-color: blue;
+    min-width: 12vw;
+    min-height: 12vw;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 12px;
+    initial-letter: 3;
 }
