@@ -7,7 +7,6 @@ body{
 
 /*Header*/
 .header{
-    width: 100vw;
     height: 10ex;
     padding-left: 1vw;
 }
@@ -19,6 +18,7 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
+    max-width: 100vw;
 
 }
 
@@ -26,22 +26,26 @@ body{
 .sidebar{
     flex-grow: 1;
     flex-direction: column;
-    min-width: 35ex;
+    min-width: 25ex;
+    max-width: 40ex;
     text-align: left;
 }
 
-/* Content Flex Conatiner */
+/*Main Flex Conatiner */
 .flex-content{
     display: flex;
     flex-flow: row wrap;
-    flex-grow: 5;
+    flex-grow: 2;
     justify-content: top;
     align-items:center;
+    height: 100%;
+    overflow-y:scroll;
 }
 
 /* Flex Objects */
 .flexible{
-    background-color: blue;
+    background: rgb(36,31,126);
+    background: linear-gradient(38deg, rgba(36,31,126,1) 0%, rgba(23,9,121,1) 37%, rgba(0,80,255,1) 100%); 
     min-width: 12vw;
     min-height: 12vw;
     margin: 1vw;
