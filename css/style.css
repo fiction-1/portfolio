@@ -11,7 +11,6 @@ body{
     padding-left: 1vw;
 }
 
-
 /* Page Flex conatiner */
 .page-flex{
     display: flex;
@@ -36,8 +35,8 @@ body{
     display: flex;
     flex-flow: row wrap;
     flex-grow: 2;
-    justify-content: top;
-    align-items:center;
+    justify-content: center;
+    align-items:top;
     height: 100%;
     overflow-y:scroll;
 }
@@ -46,8 +45,8 @@ body{
 .flexible{
     background: rgb(36,31,126);
     background: linear-gradient(38deg, rgba(36,31,126,1) 0%, rgba(23,9,121,1) 37%, rgba(0,80,255,1) 100%); 
-    min-width: 12vw;
-    min-height: 12vw;
+    min-width: 18vw;
+    min-height: 18vw;
     margin: 1vw;
     padding: 1vw;
     border-radius: 12px;
