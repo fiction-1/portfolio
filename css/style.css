@@ -5,6 +5,16 @@ body{
     color: white;
 }
 
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none
+}
+
 /*Header*/
 .header{
     height: 10ex;
@@ -31,14 +41,22 @@ body{
 }
 
 /*Main Flex Conatiner */
-.flex-content{
+.flex-content-row{
     display: flex;
     flex-flow: row wrap;
     flex-grow: 2;
     justify-content: center;
     align-items:top;
-    height: 100%;
-    overflow-y:scroll;
+    align-content: center;
+}
+
+.flex-content-column{
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 2;
+    justify-content: center;
+    align-items:top;
+    align-content: center;
 }
 
 /* Flex Objects */
@@ -51,4 +69,9 @@ body{
     padding: 1vw;
     border-radius: 12px;
     initial-letter: 3;
+}
+
+.flex-photo{
+    align-self: center;
+    padding-bottom: 75px;
 }
